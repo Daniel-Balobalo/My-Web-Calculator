@@ -3,33 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Calculator</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <title>My Web-Calculator</title>
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" disabled />
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="deleteLast()">DEL</button>
-      <button onclick="appendOperator('/')">÷</button>
-      <button onclick="appendOperator('*')">×</button>
-      <button onclick="appendNumber('7')">7</button>
-      <button onclick="appendNumber('8')">8</button>
-      <button onclick="appendNumber('9')">9</button>
-      <button onclick="appendOperator('-')">-</button>
-      <button onclick="appendNumber('4')">4</button>
-      <button onclick="appendNumber('5')">5</button>
-      <button onclick="appendNumber('6')">6</button>
-      <button onclick="appendOperator('+')">+</button>
-      <button onclick="appendNumber('1')">1</button>
-      <button onclick="appendNumber('2')">2</button>
-      <button onclick="appendNumber('3')">3</button>
-      <button onclick="calculate()">=</button>
-      <button onclick="appendNumber('0')">0</button>
-      <button onclick="appendNumber('.')">.</button>
-    </div>
+  <div class="wrapper">
+    <section class="screen">
+      0
+    </section>
+
+    <section class="buttons">
+      <div class="buttons-row">
+        <button class="button">
+          C
+        </button>
+        <button class="button">
+          &larr;
+        </button>
+       
+        <button class="button">
+          &div;
+        </button>
+
+      <div class="buttons-row">
+        <section class="buttons">
+          <div class="buttons-row">
+            <button class="button">
+              7
+            </button>
+            <button class="button">
+              8
+            </button>
+            <button class="button">
+              9
+            </button>
+            <button class="button">
+              &times;
+            </button>
+      </div>
+
+      <div class="buttons-row">
+        <button class="button">
+          4
+        </button>
+        <button class="button">
+          5
+        </button>
+        <button class="button">
+          6
+        </button>
+        <button class="button">
+          &minus;
+        </button>
+      </div>
+
+      <div class="buttons-row">
+        <button class="button">
+          1
+        </button>
+        <button class="button">
+          2
+        </button>
+        <button class="button">
+          3
+        </button>
+        <button class="button">
+          &plus;
+        </button>
+      </div>
+
+      <div class="buttons-row">
+        <button class="button">
+          0
+        </button>
+       
+        <button class="button">
+          &equals;
+        </button>
+        <button class="button">
+          &sup2;
+        </button>
+        <button class="button">
+          &radic;
+        </button>
+      </div>
+
+    </section>
+
   </div>
+
+
   <script src="script.js"></script>
 </body>
 </html>
