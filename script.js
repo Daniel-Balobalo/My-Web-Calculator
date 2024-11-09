@@ -50,7 +50,7 @@ function deleteLast() {
 
 function calculate() {
   try {
-    currentInput = eval(currentInput.replace('×', '*').replace('÷', '/'));
+    currentInput = eval(currentInput.replace('×', '*').replace('÷', '/').replace('−', '-'));
     screen.textContent = currentInput;
     resetScreen = true;
   } catch {

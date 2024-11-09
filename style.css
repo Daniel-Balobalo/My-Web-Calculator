@@ -1,86 +1,118 @@
-* {
+html {
   box-sizing: border-box;
+  height: 631px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 body {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f2f2f2;
+  background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+  display: flex;
+  font-family: 'Dosis', sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
 }
 
 .wrapper {
-  width: 360px; /* Enlarged width */
-  background-color: #333;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  background-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 35px;
 }
 
 .screen {
-  height: 70px; /* Increased height */
-  padding: 15px;
-  font-size: 32px; /* Increased font size */
-  color: #fff;
-  background-color: #444;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  font-size: 35px;
+  overflow: auto;
+  padding: 20px;
   text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  border-bottom: 2px solid #555;
-}
-
-.buttons {
-  padding: 12px;
+  width: 326px;
 }
 
 .buttons-row {
   display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  margin: 5% 0;
 }
 
 .button {
-  flex: 1;
-  padding: 20px 0; /* Increased padding */
-  font-size: 24px; /* Increased font size */
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 65px;
+}
+
+.button:last-child {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
   color: #fff;
-  background-color: #555;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  background: #d72880;
 }
 
 .button:hover {
-  background-color: #666;
+  background-color: inherit;
+}
+
+.button:last-child:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.buttons-row:last-child .button:nth-child(2),
+.buttons-row:last-child .button:nth-child(3) {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: #d72880;
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #fff;
+}
+
+.buttons-row:last-child .button:nth-child(2):hover,
+.buttons-row:last-child .button:nth-child(3):hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.buttons-row:first-child .button:nth-child(1),
+.buttons-row:first-child .button:nth-child(2) {
+  flex-basis: 33.85%;
 }
 
 .button:active {
-  background-color: #777;
-}
-
-.button:nth-child(4),
-.button:nth-last-child(4) {
-  background-color: #f39c12; /* Highlight for operators */
-}
-
-.button:nth-child(4):hover,
-.button:nth-last-child(4):hover {
-  background-color: #e67e22;
-}
-
-/* Specific adjustments for C and DEL buttons */
-.buttons-row:first-child .button:nth-child(1),
-.buttons-row:first-child .button:nth-child(2) {
-  background-color: #d9534f;
-}
-
-.buttons-row:first-child .button:nth-child(1):hover,
-.buttons-row:first-child .button:nth-child(2):hover {
-  background-color: #c9302c;
+  background-color: #ffef78;
 }
