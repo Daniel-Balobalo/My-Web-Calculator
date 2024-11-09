@@ -5,22 +5,45 @@ let resetScreen = false;
 document.querySelectorAll('.button').forEach(button => {
   button.addEventListener('click', () => {
     const value = button.textContent.trim();
-    
-    if (value === 'C') {
-      clearScreen();
-    } else if (value === '←') {
-      deleteLast();
-    } else if (value === '=') {
-      calculate();
-    } else if (value === '²') {
-      square();
-    } else if (value === '√') {
-      squareRoot();
-    } else {
-      appendValue(value);
-    }
+    handleInput(value);
   });
 });
+
+// Listen for keyboard input
+document.addEventListener('keydown', (event) => {
+  const key = event.key;
+
+  if (key === 'Enter') {
+    handleInput('=');
+  } else if (key === 'Backspace') {
+    handleInput('←');
+  } else if (key === 'c' || key === 'C') {
+    handleInput('C');
+  } else if (key === '^') {
+    handleInput('²'); // Square operation
+  } else if (key === '&') {
+    handleInput('√'); // Square root operation
+  } else if (/[\d+\-*/.]/.test(key)) { // Allow digits, operators, and decimal
+    handleInput(key);
+  }
+});
+
+// Handle input from buttons and keyboard
+function handleInput(value) {
+  if (value === 'C') {
+    clearScreen();
+  } else if (value === '←') {
+    deleteLast();
+  } else if (value === '=') {
+    calculate();
+  } else if (value === '²') {
+    square();
+  } else if (value === '√') {
+    squareRoot();
+  } else {
+    appendValue(value);
+  }
+}
 
 function appendValue(value) {
   if (resetScreen) {
@@ -33,6 +56,9 @@ function appendValue(value) {
       currentInput = currentInput.slice(0, -1);
     }
   }
+
+  if (value === '*') value = '×';
+  if (value === '/') value = '÷';
 
   currentInput += value;
   screen.textContent = currentInput;
