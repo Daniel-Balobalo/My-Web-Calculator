@@ -17,7 +17,7 @@ document.addEventListener('keydown', (event) => {
     handleInput('=');
   } else if (key === 'Backspace') {
     handleInput('←');
-  } else if (key === 'c' || key === 'C') {
+  } else if (key === 'c' || key === 'C' || key === 'Escape') {
     handleInput('C');
   } else if (key === '^') {
     handleInput('²'); // Square operation
