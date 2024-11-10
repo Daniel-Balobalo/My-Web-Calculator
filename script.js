@@ -13,7 +13,7 @@ document.querySelectorAll('.button').forEach(button => {
 document.addEventListener('keydown', (event) => {
   const key = event.key;
 
-  if (key === 'Enter') {
+  if (key === 'Enter' || key === '=') {
     handleInput('=');
   } else if (key === 'Backspace') {
     handleInput('←');
