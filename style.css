@@ -117,3 +117,12 @@ body {
 .button:active {
   background-color: #ffef78;
 }
+
+.button:last-child:active {
+  background-color: #ffef78;
+}
+
+.buttons-row:last-child .button:nth-child(2):active,
+.buttons-row:last-child .button:nth-child(3):active {
+  background-color: #ffef78;
+}
