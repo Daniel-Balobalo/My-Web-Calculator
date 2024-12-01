@@ -38,38 +38,38 @@ body {
 }
 
 .screen {
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.01);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-  color: #232323;
-  font-size: 35px;
-  overflow: auto;
-  padding: 20px;
-  text-align: right;
-  width: 326px;
+  backdrop-filter: blur(5.5px); /* Adds a blur effect to the screen */
+  -webkit-backdrop-filter: blur(5.5px); /* Adds a blur effect for WebKit browsers */
+  background: rgba(255, 255, 255, 0.75); /* Sets a translucent white background for the screen */
+  border: 1px solid rgba(255, 255, 255, 0.01); /* Adds a very subtle border */
+  border-radius: 16px; /* Rounds the corners of the screen */
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* Adds a shadow for depth */
+  color: #232323; /* Sets the text color for the screen content */
+  font-size: 35px; /* Sets the font size for the screen display */
+  overflow: auto; /* Allows scrolling if the content overflows */
+  padding: 20px; /* Adds padding inside the screen */
+  text-align: right; /* Aligns text to the right side */
+  width: 326px; /* Fixes the width of the screen */
 }
 
 .buttons-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 5% 0;
+  display: flex; /* Enables flexbox layout for the row of buttons */
+  justify-content: space-between; /* Distributes buttons evenly with space between them */
+  margin: 5% 0; /* Adds vertical spacing between rows */
 }
 
 .button {
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.01);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-  color: #232323;
-  flex-basis: 20%;
-  font-family: inherit;
-  font-size: 24px;
-  height: 65px;
+  backdrop-filter: blur(5.5px); /* Adds a frosted-glass blur effect to the buttons */
+  -webkit-backdrop-filter: blur(5.5px); /* Adds a blur effect for WebKit browsers */
+  background: rgba(255, 255, 255, 0.75); /* Sets a translucent white background for the buttons */
+  border: 1px solid rgba(255, 255, 255, 0.01); /* Adds a subtle border for the buttons */
+  border-radius: 16px; /* Rounds the corners of each button */
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* Adds a shadow to the buttons for depth */
+  color: #232323; /* Sets the text color of the buttons */
+  flex-basis: 20%; /* Buttons take up 20% of the row width */
+  font-family: inherit; /* Inherits the font family from the parent */
+  font-size: 24px; /* Sets the font size for button text */
+  height: 65px; /* Sets the height of the buttons */
 }
 
 .button:last-child {
