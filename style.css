@@ -1,11 +1,11 @@
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Sets the box model to include padding and border in width and height calculations */
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+  box-sizing: inherit; /* Ensures all elements and pseudo-elements follow the box model defined above */
+  margin: 0; /* Removes default margins for all elements */
+  padding: 0; /* Removes default padding for all elements */
 }
 
 body {
