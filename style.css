@@ -23,18 +23,18 @@ body {
 }
 
 .wrapper {
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-  color: #232323;
-  background-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.30);
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  flex-basis: 400px;
-  height: 540px;
-  padding: 20px 35px;
+  backdrop-filter: blur(5.5px); /* Creates a frosted glass effect for the background */
+  -webkit-backdrop-filter: blur(5.5px); /* Ensures the frosted effect works on WebKit browsers like Safari */
+  border-radius: 16px; /* Rounds the corners of the wrapper for a softer, modern look */
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* Adds a subtle shadow for a floating effect */
+  color: #232323; /* Sets the text color inside the wrapper */
+  background-filter: blur(4px); /* Adds an additional blur layer to the background */
+  -webkit-backdrop-filter: blur(4px); /* Ensures compatibility with WebKit browsers */
+  background: rgba(255, 255, 255, 0.30); /* Sets a semi-transparent white background */
+  border: 1px solid rgba(255, 255, 255, 0.34); /* Adds a light border for extra definition */
+  flex-basis: 400px; /* Sets the preferred width of the wrapper, allowing flexibility */
+  height: 540px; /* Defines the height of the wrapper */
+  padding: 20px 35px; /* Adds internal spacing around the content for better layout */
 }
 
 .screen {
